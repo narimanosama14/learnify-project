@@ -1,0 +1,353 @@
+
+/* RESET STYLES */
+* {
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة الحشوات الافتراضية */
+    box-sizing: border-box; /* جعل جميع العناصر تحتسب الحشوة والحدود في العرض والطول */
+}
+
+/* BODY */
+body {
+    font-family: 'Arial', sans-serif; /* تعيين نوع الخط */
+    line-height: 1.6; /* تحديد المسافة بين الأسطر */
+    color: #000000; /* تعيين لون النص */
+    background-color: #f5f5f5; /* تعيين خلفية فاتحة للصفحة */
+}
+
+/* HEADER */
+.header {
+    display: flex; /* استخدام الفليكس لتوزيع المحتويات */
+    justify-content: space-between; /* توزيع العناصر بالتساوي بين الجانبين */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    padding: 5px; /* إضافة حشوة حول الهيدر */
+    background:#004D40; /* تعيين خلفية باللون الموف */
+    color: #004D40; /* تعيين لون النص أبيض */
+    background-color: rgba(2, 27, 2, 0.1);
+    
+    
+}
+
+.header .logo {
+    font-size: 2rem; /* تعيين حجم الخط لللوجو */
+    color: #004D40; /* تعيين لون اللوجو باللون الأبيض */
+    text-decoration: none; /* إزالة التسطير */
+}
+
+.header .navbar a {
+    color: #004D40; /* تعيين لون النص للرابط أبيض */
+    text-decoration: none; /* إزالة التسطير عن الروابط */
+    margin: 0 10px; /* إضافة هامش بين الروابط */
+    
+}
+
+.header .navbar a:hover {
+    color: #ff6347; /* تغيير لون النص عند المرور فوق الرابط */
+}
+
+.header .btn {
+    background-color:#004D40; /* تعيين اللون الأزرق للخلفية */
+    color: #FBC02D; /* تعيين لون النص أبيض */
+    padding: 12px 25px; /* إضافة حشوة حول الزر */
+    text-decoration: line; /* إزالة التسطير */
+    border-radius: 5px; /* إضافة حدود دائرية للزر */
+}
+
+/* HOME */
+/* التصميم العام */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+
+/* محتوى النص */
+.home .content {
+    flex: 2;
+    padding: 40px;
+    color: #004D40;
+    position: absolute;
+    z-index: 2;
+    text-align: right;
+    left: 60%;
+    top: 45%;
+    transform: translateY(-50%);
+    max-width: 600px;
+}
+
+.home .content h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #004D40;
+}
+
+.home .content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #4a4141;
+}
+
+.home .content .btn {
+    display: inline-block;
+    background-color: #004D40;
+    color: #FBC02D;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home .content .btn:hover {
+    background-color: #FBC02D;
+    color: #004D40;
+    transform: scale(1.05);
+}
+
+/* تصميم الصورة */
+.home .image {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.home .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+    border-radius: 10px;
+}
+
+/* دعم الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .home .content {
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width: 90%;
+    }
+
+    .home .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .content p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* ABOUT */
+.about {
+    padding: 80px 50px; /* إضافة حشوة حول قسم "عن" */
+    background-color: #fff; /* تعيين خلفية بيضاء للقسم */
+    text-align: center; /* محاذاة النص في المنتصف */
+}
+
+.about .heading {
+    font-size: 2.5rem; /* تعيين حجم الخط */
+    margin-bottom: 40px; /* إضافة هامش أسفل العنوان */
+    color:#004D40; /* لون موف */
+}
+
+.about .row {
+    display: flex; /* استخدام الفليكس لترتيب المحتوى */
+    justify-content: space-between; /* توزيع المحتويات بشكل متساوي */
+    align-items: center; /* محاذاة العناصر عموديًا */
+    flex-wrap: wrap; /* السماح للعناصر باللف على الأسطر إذا لزم الأمر */
+}
+
+.about .image {
+    flex: 1;
+    max-width: 45%; /* تحديد الحد الأقصى لعرض الصورة */
+    margin: 0 20px; /* إضافة هامش على الجانبين */
+}
+
+.about .image img {
+    width: 100%; /* جعل الصورة تأخذ كامل عرض العنصر */
+    height: auto; /* الحفاظ على نسبة الأبعاد الأصلية للصورة */
+    object-fit: cover; /* جعل الصورة تغطي المساحة كاملة */
+    border-radius: 20px; /* إضافة حدود دائرية للصورة */
+}
+
+.about .content {
+    flex: 1;
+    max-width: 50%; /* تعيين الحد الأقصى لعرض المحتوى */
+    padding: 20px; /* إضافة حشوة داخل المحتوى */
+}
+
+.about .title {
+    font-size: 2rem; /* حجم خط العنوان داخل قسم "عن" */
+    margin-bottom: 20px; /* إضافة هامش أسفل العنوان */
+    color:#004D40; /* لون موف */
+}
+
+.about p {
+    font-size: 1.2rem; /* حجم الخط للنص */
+    margin-bottom: 20px; /* إضافة هامش أسفل الفقرة */
+    line-height: 1.8; /* تحديد المسافة بين الأسطر */
+}
+
+.about .btn {
+    background-color: #004D40; /* تعيين اللون الأزرق للزر */
+    color: #FBC02D; /* تعيين لون النص أبيض */
+    padding: 12px 25px; /* إضافة حشوة حول الزر */
+    border-radius: 5px; /* إضافة حدود دائرية للزر */
+    text-decoration: line; /* إزالة التسطير */
+    margin-top: 20px; /* إضافة هامش أعلى الزر */
+}
+
+/* MENU */
+.menu {
+    padding: 80px 50px; /* إضافة حشوة حول قسم القائمة */
+    background-color: #f5f5f5; /* تعيين خلفية فاتحة للقسم */
+}
+
+.menu .heading {
+    text-align: center; /* محاذاة النص في المنتصف */
+    font-size: 2.5rem; /* حجم خط العنوان */
+    margin-bottom: 40px; /* إضافة هامش أسفل العنوان */
+    color: #000000; /* لون موف */
+}
+
+.menu .box-container {
+    display: flex; /* استخدام الفليكس لتوزيع العناصر */
+    justify-content: space-between; /* توزيع العناصر بشكل متساوي */
+    flex-wrap: wrap; /* السماح للعناصر باللف على الأسطر إذا لزم الأمر */
+    text-decoration: none;
+
+}
+
+.menu .box {
+    background-color: #fff; /* تعيين الخلفية البيضاء للعنصر */
+    width: 23%; /* تحديد عرض العنصر */
+    margin: 10px; /* إضافة هامش حول العنصر */
+    border-radius: 5px; /* إضافة حدود دائرية للعنصر */
+    overflow: hidden; /* إخفاء الأجزاء التي تتجاوز حدود العنصر */
+    text-decoration: none;
+
+}
+
+.menu .box img {
+    width: 100%; /* جعل الصورة تأخذ كامل عرض العنصر */
+    height: 200px; /* تعيين ارتفاع الصورة */
+    object-fit: cover; /* جعل الصورة تغطي المساحة بالكامل */
+}
+
+.menu .box .content {
+    padding: 20px; /* إضافة حشوة حول محتوى العنصر */
+    text-decoration: none;
+    color: #000000; /* لون موف */
+}
+
+.menu .box h3 {
+    font-size: 1.8rem; /* حجم خط العنوان داخل العنصر */
+    margin-bottom: 10px; /* إضافة هامش أسفل العنوان */
+    color: #004D40; /* لون موف */
+    text-decoration: none;
+
+}
+
+.menu .box p {
+    font-size: 1rem; /* حجم الخط للنص داخل العنصر */
+    margin-bottom: 10px; /* إضافة هامش أسفل الفقرة */
+    text-decoration: none;
+
+}
+
+
+/* FOOTER */
+.footer {
+    background-color:#004D40; /* تعيين خلفية داكنة للقسم */
+    color: #fff; /* تعيين لون النص أبيض */
+    padding: 50px; /* إضافة حشوة حول الفوتر */
+}
+
+.footer .box-container {
+    display: flex; /* استخدام الفليكس لتوزيع العناصر في الفوتر */
+    justify-content: space-between; /* توزيع العناصر بشكل متساوي */
+    flex-wrap: wrap; /* السماح للعناصر باللف على الأسطر إذا لزم الأمر */
+}
+
+.footer .box {
+    flex: 1; /* توزيع المساحة بالتساوي بين العناصر */
+    margin: 10px; /* إضافة هامش حول العنصر */
+}
+
+.footer .box h3 {
+    font-size: 1.8rem; /* حجم خط العنوان داخل الفوتر */
+    margin-bottom: 20px; /* إضافة هامش أسفل العنوان */
+}
+
+.footer .box a {
+    display: block; /* جعل الروابط تأخذ مساحة كاملة */
+    color: #fff; /* تعيين لون النص أبيض */
+    text-decoration: none; /* إزالة التسطير */
+    margin-bottom: 10px; /* إضافة هامش أسفل الرابط */
+}
+
+.footer .box a:hover {
+    color: #ff6347; /* تغيير لون النص عند المرور فوق الرابط */
+}
+
+
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #004D40;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#scrollToTop:hover {
+    background-color: #004D40;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #500404;
+}
+
+
+
+.dark-mode footer {
+    background-color: #000;
+}
+
+#darkModeToggle {
+    color: white;
+    background-color: #500404;
+    padding: 10px;
+    border: none;
+    border-radius: 20%;
+}
+#darkModeToggle :hover{
+    transform: scale(1.7);
+    transition: 0.10s;
+}
